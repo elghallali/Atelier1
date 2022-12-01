@@ -6,6 +6,3 @@ def factorielle(n):
             fact *= i
         return fact
     return 1    
-
-
-print(factorielle(12))
