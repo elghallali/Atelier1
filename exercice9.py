@@ -37,9 +37,9 @@ def maxOrMin(list,choix):
                 min = list[i]
         return min
     elif(choix == "max"):
-        mqx = list[0]
+        max = list[0]
         for i in range(1,len(list)):
-            if(min < list[i]):
+            if(max < list[i]):
                 max = list[i]
         return max
     else:
