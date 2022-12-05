@@ -49,7 +49,7 @@ def maxOrMin(list,choix):
 def median(list):
     sort = bubbleSort(list)
     
-    if(len(list)%2 == 0):
+    if(len(sort)%2 == 0):
         res1 = sort[len(sort)//2 - 1]
         res2 =sort[len(sort)//2]
         return (res1 + res2) / 2
