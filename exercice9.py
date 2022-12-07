@@ -1,9 +1,4 @@
-# La fonction de puissance
-def puissance(X,n):
-    power = 1
-    for i in range(n):
-        power *= X
-    return power
+from exercice1 import puissance
 
 # La fonction de la somme des elements
 def sumOfElements(list):
@@ -71,3 +66,5 @@ def variance(list):
     for i in list:
         sum += puissance(i,2)
     return sum/len(list) - puissance(moyenne(list),2)
+
+

@@ -1,11 +1,4 @@
-# Fonction qui calcul la factorielle d'un nombre donné
-def factorielle(n):
-    if(n < 0):
-        fact = 1
-        for i in range(1,n+1):
-            fact *= i
-        return fact
-    return 1
+from exercice2 import factorielle
 
 # Fonction pour trouver la somme des series 1!/1 + 2!/2 + 3!/3 + 4!/4 + 5!/5
 
