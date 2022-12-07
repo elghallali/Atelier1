@@ -20,6 +20,11 @@ def bubbleSort(list):
                 list[j] = list[j+1]
                 list[j+1] = temp
     return list
+# La fonction qui cherche un element dans une list puis renvoi sa position 
+def searchElementInList(list,num):
+    for i in range(len(list)):
+            if(list[i] == num):
+                return i
 
 # La fonction qui revoie la moyenne arithmétique
 def moyenne(list):
@@ -58,7 +63,12 @@ def median(list):
 
 # La fonction qui renvoie le mode d'une list
 def mode(list):
-    return maxOrMin(list,"max")
+    max = maxOrMin(list,"max")
+    mode = []
+    for i in range(len(list)):
+        if ( list[i] == max ):
+            mode.append(i)
+    return mode
 
 # La fonction qui renvoie la variance d'une list
 def variance(list):
