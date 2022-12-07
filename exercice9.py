@@ -20,11 +20,6 @@ def bubbleSort(list):
                 list[j] = list[j+1]
                 list[j+1] = temp
     return list
-# La fonction qui cherche un element dans une list puis renvoi sa position 
-def searchElementInList(list,num):
-    for i in range(len(list)):
-            if(list[i] == num):
-                return i
 
 # La fonction qui revoie la moyenne arithmétique
 def moyenne(list):
